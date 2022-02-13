@@ -18,7 +18,7 @@
     padding: 0px 45px 0 45px;
     text-align: center;
     overflow-y: hidden;
-    animation: fade-in 8s ease-in-out 2s infinite;
+    animation: fade-in 10s ease-in-out 0s infinite;
   
     p {
       color: #818181;
@@ -28,10 +28,10 @@
   
   @keyframes fade-in {
     0% {
-      opacity: 90%;
+      opacity: 0%;
     }
   
-    20% {
+    10% {
       opacity: 100%;
     }
   
@@ -74,8 +74,8 @@
       border-radius: 45px;
       box-shadow: 4px 8px 15px 6px rgba(0, 0, 0, 0.1);
       flex-direction: row;
-      animation: fade-out 8s ease-in 2s infinite both;
-      transform: translateY(100%);
+      animation: fade-out 10s ease-in 0s infinite both;
+      transform: translateY(110%);
     }
   
     @keyframes fade-out {
@@ -83,7 +83,7 @@
         opacity: 0%;
       }
   
-      25% {
+      35% {
         opacity: 100%;
         transform: scale(1);
       }
@@ -111,7 +111,7 @@
     }
   
     .input3 {
-      animation: radio 8s ease-in-out 2s infinite;
+      animation: radio 10s ease-in-out 0s infinite;
     }
   
     @keyframes radio {
@@ -119,10 +119,10 @@
         background-color: $backgroundColor;
       }
   
-      50% {
+      60% {
         background-color: $backgroundColor;
       }
-      51% {
+      61% {
         background-color: $primaryColor;
       }
   
