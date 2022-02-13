@@ -1,0 +1,148 @@
+.quiz_container {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  height: 100vh;
+  width: 100%;
+  display: flex;
+}
+
+.container {
+  width: 430px;
+
+  height: 340px;
+  background-color: white;
+  border-radius: 60px;
+  border: 1px solid #6231EC;
+}
+
+.answer_cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 5%;
+  margin-right: 5%;
+  height: 220px;
+}
+
+
+.card1,
+.card2,
+.card3 {
+  display: flex;
+  height: 60px;
+ 
+  background-color: white;
+  border-color: transparent;
+  border-radius: 45px;
+  box-shadow: 4px 8px 15px 6px rgba(0, 0, 0, 0.1);
+  flex-direction: row;
+  animation:fade-out 7s ease-in 2s infinite both;
+  transform: translateY(100%);
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 0%;
+  }
+     
+      25% {
+        opacity: 100%;
+        transform: scale(1);
+      }
+      75%{
+        opacity: 100%;
+        transform: scale(1);
+      }
+      79%{
+          opacity: 0%;
+         
+      }
+      100%{
+          opacity: 0%;
+          
+      }
+      
+}
+
+
+.question_container {
+  height: 22%;
+  margin-top: 10px;
+  width: 100%;
+  text-align: left;
+  display: flex;
+  padding: 0px 45px 0 45px;
+  text-align: center;
+  overflow-y: hidden;
+  animation: fade-in 7s ease-in-out 2s infinite;
+  
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 70%;
+  }
+
+ 
+  20%{
+    opacity: 100%;
+  }
+  
+  75%{
+    opacity: 100%;
+  }
+79%{
+      opacity:0%;
+  }
+  100%{
+      opacity: 0%;
+  }
+}
+
+.question {
+  color: #818181;
+  font-weight: 600;
+}
+.input2,
+.input{
+  flex: 0.05;
+margin-top: 20px;
+ border-radius: 100%;
+  height:20px ;
+ width:fit-content;
+ margin-left: 12px;
+  border: 2px solid #6231EC;
+  
+}
+
+.answer {
+  margin-left: 15px;
+  flex: 0.9;
+  text-align: left;
+  color: #6231EC;
+  
+}
+
+.input2{
+  
+  animation: radio 7s ease-in-out 2s infinite;
+  
+}
+
+@keyframes radio {
+  
+  40%{
+     background-color: #FFFFFF;
+  }
+ 60%{
+   background-color:#6231EC ;
+
+ }
+ 100%{
+   background-color: #6231EC;
+ }
+
+  
+}
