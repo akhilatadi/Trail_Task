@@ -10,6 +10,7 @@
 
 .question_container {
 
+  
     @include flexCenter();
     height: 22%;
     margin-top: 10px;
@@ -18,7 +19,7 @@
     padding: 0px 45px 0 45px;
     text-align: center;
     overflow-y: hidden;
-    animation: fade-in 10s ease-in-out 0s infinite;
+    animation: fade-in 9s ease-in-out 0s infinite;
   
     p {
       color: #818181;
@@ -31,7 +32,7 @@
       opacity: 0%;
     }
   
-    10% {
+    7% {
       opacity: 100%;
     }
   
@@ -39,7 +40,7 @@
       opacity: 100%;
     }
     79% {
-      opacity: 0%;
+      opacity: 0%; 
     }
     100% {
       opacity: 0%;
@@ -74,8 +75,8 @@
       border-radius: 45px;
       box-shadow: 4px 8px 15px 6px rgba(0, 0, 0, 0.1);
       flex-direction: row;
-      animation: fade-out 10s ease-in 0s infinite both;
-      transform: translateY(110%);
+      animation: fade-out 9s ease-in 0s infinite both;
+      transform: translateY(80%);
     }
   
     @keyframes fade-out {
@@ -83,9 +84,10 @@
         opacity: 0%;
       }
   
-      35% {
+      30% {
         opacity: 100%;
         transform: scale(1);
+        animation-delay: 1s;
       }
       75% {
         opacity: 100%;
@@ -111,7 +113,7 @@
     }
   
     .input3 {
-      animation: radio 10s ease-in-out 0s infinite;
+      animation: radio 9s ease-in-out 0s infinite;
     }
   
     @keyframes radio {
@@ -119,10 +121,10 @@
         background-color: $backgroundColor;
       }
   
-      60% {
+      50% {
         background-color: $backgroundColor;
       }
-      61% {
+      51% {
         background-color: $primaryColor;
       }
   

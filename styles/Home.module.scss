@@ -7,8 +7,10 @@ $backgroundColor: white;
   @include flexCenter();
   text-align: center;
 
-  height: 100vh;
+  height: 80vh;
   width: 100%;
+  position:relative;
+  background-color: $backgroundColor;
   
 }
 
@@ -19,7 +21,7 @@ $backgroundColor: white;
   background-color: $backgroundColor;
   border-radius: 60px;
   border: 1px solid $primaryColor;
-  
+  position:absolute;
 }
 
 /////////////FOR MOBILE SCREEN///////////
@@ -31,3 +33,30 @@ $backgroundColor: white;
     height: 340px;
   }
 }
+
+/////////// Language container///////
+
+.lang_container{
+display: flex;
+ color:$primaryColor;
+ flex-direction: row;
+ text-align: left;
+height:10vh;
+display: flex;
+
+width: 200px;
+
+
+ul{
+  flex-direction: row;
+  display: flex;
+  
+}
+li{
+  margin: 0 20px 0 20px;
+  
+}
+
+}
+
+
