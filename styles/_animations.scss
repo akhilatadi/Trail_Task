@@ -19,7 +19,7 @@
     padding: 0px 45px 0 45px;
     text-align: center;
     overflow-y: hidden;
-    animation: fade-in 9s ease-in-out 0s infinite;
+    animation: fade-in 8s ease-in-out 0s infinite;
   
     p {
       color: #818181;
@@ -75,7 +75,7 @@
       border-radius: 45px;
       box-shadow: 4px 8px 15px 6px rgba(0, 0, 0, 0.1);
       flex-direction: row;
-      animation: fade-out 9s ease-in 0s infinite both;
+      animation: fade-out 8s ease-in 0s infinite both;
       transform: translateY(80%);
     }
   
@@ -113,7 +113,7 @@
     }
   
     .input3 {
-      animation: radio 9s ease-in-out 0s infinite;
+      animation: radio 8s ease-in-out 0s infinite;
     }
   
     @keyframes radio {
